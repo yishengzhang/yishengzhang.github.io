@@ -1,0 +1,464 @@
+<html>
+  <head>
+<link rel=Stylesheet href="regex.css" type="text/css">
+    <title>Tutorial</title>
+  </head>
+  <body bgcolor="gainsboro">
+    <div align=center>
+      <h1>Tutorial</h1>
+      <a href="index.html">Introduction</a>&nbsp;&nbsp;&nbsp;<a href="tutorial.html">Tutorial</a>&nbsp;&nbsp;&nbsp;<a href="quiz.htm">Quiz</a>&nbsp;&nbsp;&nbsp;<a href="storyboard.html">Storyboard</a>&nbsp;&nbsp;&nbsp;<a href="references.html">References</a>
+    </div>
+  <hr>
+  <p>Boolean algebra has a system of different operators or logic gates which are known as "AND", "OR", and "NOT". These are the same gates that people will use in constructing computers. For each of the gates, there is always one output no matter how many inputs there are. This is not to be confused with a system of gates like the full adder or half adder.</p>
+  <p>We must be aware that Boolean algebra consists of only 1s or 0s, but this is not to be confused with binary numbers. Binary numbers can consist of multiple digits, but in Boolean algebra, there can only be a single digit per number. Furthermore, Boolean algebra is not like real math. In the end, there can only be the values of True or False. For example, in decimal or pretty much any basis of number, 1 + 1 = 2. However, in Boolean algebra, 1 + 1 = 1. A value greater than 1 or less than 0 cannot exist in Boolean algebra. In terms of addition, Boolean algebra will work like this. This is known as the OR gate.</p>
+  <div align=center>
+  <img src=Pictures/OR.png>
+  <p>0 + 0 = 0<br>
+     0 + 1 = 1<br>
+     1 + 1 = 1<br>
+     1 + 1 = 1</p>
+  </div>
+  <p>Multiplication will also work in Boolean Algebra. Unlike addition, multiplication works just like multiplication for any other base. This is known as the AND gate.</p>
+  <div align=center>
+  <img src=Pictures/AND.png>
+  <p>0 &middot; 0 = 1<br>
+     0 &middot; 1 = 0<br>
+     1 &middot; 0 = 0<br>
+     1 &middot; 1 = 1</p>
+  </div>
+  <p>The values of "True" or "False" can also be converted to the opposite value. This function can be seen with the overline bar. This is known as the NOT gate.</p>
+  <div align=center>
+  <img src=Pictures/NOT.png>
+  <p>If A is false, <span style="text-decoration: overline;">A</span> = 1<br>
+     If A is true, <span style="text-decoration: overline;">A</span> = 0</p>
+  </div>
+  <p>There's also one more gate we should be aware of. It's the XOR gate and you may see it in Boolean algebra. This gate should not be confused with the OR gate.</p>
+  <div align=center>
+  <img src=Pictures/XOR.png>
+  <p>0 &oplus; 0 = 0<br>
+     0 &oplus; 1 = 1<br>
+     1 &oplus; 0 = 1<br>
+     1 &oplus; 1 = 0</p>
+  </div>
+  <p>Below is a list of properties and laws that are used in Boolean algebra. Beside each law is a truth table that displays the possible outcomes.</p>
+  <table width="100%" border="0">
+    <tbody>
+      <tr>
+        <td>
+          <table border="1">
+           <tbody>
+             <tr>
+               <th>Properties</th>
+               <th colspan="4">Laws</th>
+             </tr>
+             <tr>
+               <td>Commutative Property<br>
+                 <ol type="a">
+                   <li>A + B = B + A</li><br>
+                   <li>AB = BA</li>
+                 </ol>
+               </td>
+               <td>Laws of Union
+                 <ol type="a">
+                   <li>A + 0 = A</li>
+                   <li>A + 1 = 1</li>
+                 <ol>
+               </td>
+               <td>
+                 <table border="1">
+                   <tbody>
+                     <tr>
+                       <th>A</th>
+                       <th>0</th>
+                       <th>X</th>
+                       <th>&nbsp;</th>
+                       <th>A</th>
+                       <th>1</th>
+                       <th>X</th>
+                     </tr>
+                     <tr>
+                       <td>0</td>
+                       <td>0</td>
+                       <td>0</td>
+                       <td>&nbsp;</td>
+                       <td>0</td>
+                       <td>1</td>
+                       <td>1</td>
+                     </tr>
+                     <tr>
+                       <td>1</td>
+                       <td>0</td>
+                       <td>1</td>
+                       <td>&nbsp;</td>
+                       <td>1</td>
+                       <td>1</td>
+                       <td>1</td>
+                     </tr>
+                   </tbody>
+                 </table>
+               </td>
+               <td>Law of the Complements
+                 <ol type="a">
+                   <li>A &middot; <span style="text-decoration: overline;">A</span> = 0</li>
+                   <li>A + <span style="text-decoration: overline;">A</span> = 1</li>
+                 </ol>
+               </td>
+               <td>
+                 <table border="1">
+                   <tbody>
+                     <tr>
+                       <th>A</th>
+                       <th><span style="text-decoration: overline;">A</span></th>
+                       <th>X</th>
+                       <th>&nbsp;</th>
+                       <th>A</th>
+                       <th><span style="text-decoration: overline;">A</span></th>
+                       <th>X</th>
+                     </tr>
+                     <tr>
+                       <td>0</td>
+                       <td>1</td>
+                       <td>0</td>
+                       <td>&nbsp;</td>
+                       <td>0</td>
+                       <td>1</td>
+                       <td>1</td>
+                     </tr>
+                     <tr>
+                       <td>1</td>
+                       <td>0</td>
+                       <td>0</td>
+                       <td>&nbsp;</td>
+                       <td>1</td>
+                       <td>0</td>
+                       <td>1</td>
+                     </tr>
+                   </tbody>
+                 </table>
+               </td>
+             </tr>
+             <tr>
+               <td>Associative Property<br>
+                 <ol type="a">
+                   <li>(A + B) + C = A + (B + C)</li>
+                   <li>(AB)C = A(BC)</li>
+                 </ol>
+               </td>
+               <td>Laws of Intersection
+                 <ol type="a">
+                   <li>A &middot; 0 = 0</li>
+                   <li>A &middot; 1 = 1</li>
+                 </ol>
+               </td>
+               <td>
+                 <table border="1">
+                   <tbody>
+                     <tr>
+                       <th>A</th>
+                       <th>0</th>
+                       <th>X</th>
+                       <th>&nbsp;</th>
+                       <th>A</th>
+                       <th>1</th>
+                       <th>X</th>
+                     </tr>
+                     <tr>
+                       <td>0</td>
+                       <td>0</td>
+                       <td>0</td>
+                       <td>&nbsp;</td>
+                       <td>0</td>
+                       <td>1</td>
+                       <td>0</td>
+                     </tr>
+                     <tr>
+                       <td>1</td>
+                       <td>0</td>
+                       <td>0</td>
+                       <td>&nbsp;</td>
+                       <td>1</td>
+                       <td>1</td>
+                       <td>1</td>
+                     </tr>
+                   </tbody>
+                 </table>
+               </td>
+               <td>DeMorgan's Law
+                 <ol type="a">
+                   <li><span style="text-decoration: overline;">A &middot; B</span> = <span style="text-decoration: overline;">A</span> + <span style="text-decoration: overline;">B</span></li>
+                   <li><span style="text-decoration: overline;">A + B</span> = <span style="text-decoration: overline;">A</span> &middot; <span style="text-decoration: overline;">B</span></li>
+                 </ol>
+               </td>
+               <td>
+                 <table border="1">
+                   <tbody>
+                     <tr>
+                       <th>A</th>
+                       <th>B</th>
+                       <th>X</th>
+                       <th>&nbsp;</th>
+                       <th>A</th>
+                       <th>B</th>
+                       <th>X</th>
+                     </tr>
+                     <tr>
+                       <td>0</td>
+                       <td>0</td>
+                       <td>1</td>
+                       <td>&nbsp;</td>
+                       <td>0</td>
+                       <td>0</td>
+                       <td>1</td>
+                     </tr>
+                     <tr>
+                       <td>0</td>
+                       <td>1</td>
+                       <td>1</td>
+                       <td>&nbsp;</td>
+                       <td>0</td>
+                       <td>1</td>
+                       <td>0</td>
+                     </tr>
+                     <tr>
+                       <td>1</td>
+                       <td>0</td>
+                       <td>1</td>
+                       <td>&nbsp;</td>
+                       <td>1</td>
+                       <td>0</td>
+                       <td>0</td>
+                     </tr>
+                     <tr>
+                       <td>1</td>
+                       <td>1</td>
+                       <td>0</td>
+                       <td>&nbsp;</td>
+                       <td>1</td>
+                       <td>1</td>
+                       <td>0</td>
+                     </tr>
+                   </tbody>
+                 </table>
+               </td>
+             </tr>
+             <tr>
+               <td>Distributive Property
+                 <ol type="a">
+                   <li>A(A + C) = AB + AC</li>
+                   <li>A + (BC) = (A + B)(A + C)</li>
+                 </ol>
+               </td>
+               <td>Laws of Tautology
+                 <ol type="a">
+                   <li>A + A = A</li>
+                   <li>A &middot; A = 1</li>
+                 </ol>
+               </td>
+               <td>
+                 <table border="1">
+                   <tbody>
+                     <tr>
+                       <th>A</th>
+                       <th>A</th>
+                       <th>X</th>
+                       <th>&nbsp;</th>
+                       <th>A</th>
+                       <th>A</th>
+                       <th>X</th>
+                     </tr>
+                     <tr>
+                       <td>0</td>
+                       <td>0</td>
+                       <td>0</td>
+                       <td>&nbsp;</td>
+                       <td>0</td>
+                       <td>0</td>
+                       <td>0</td>
+                     </tr>
+                     <tr>
+                       <td>1</td>
+                       <td>1</td>
+                       <td>1</td>
+                       <td>&nbsp;</td>
+                       <td>1</td>
+                       <td>1</td>
+                       <td>1</td>
+                     </tr>
+                   </tbody>
+                 </table>
+               </td>
+               <td>Law of the Double Negative
+                 <ol type="a">
+                   <li>
+                     <style type="text/css">
+                     .double-underline {
+                     border-top: 4px double;
+                     }
+                     </style>
+                     <span class="double-underline">A</span> = A
+                   </li>
+                 </ol>
+               </td>
+               <td>
+                 <table align="center" border="1">
+                   <tbody>
+                     <tr>
+                       <th>A</th>
+                       <th><span style="text-decoration: overline;">A</span></th>
+                       <th>X</th>
+                     </tr>
+                     <tr>
+                       <td>0</td>
+                       <td>1</td>
+                       <td>0</td>
+                     </tr>
+                     <tr>
+                       <td>1</td>
+                       <td>0</td>
+                       <td>1</td>
+                     </tr>
+                   </tbody>
+                 </table>
+               </td>
+             </tr>
+           </tbody>
+          </table>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <p><b>Solving Simple Problems</b><br>
+     Here are some examples of simple problems and the solutions.</p>
+    <ul>
+      <li><b>A + <span style="text-decoration: overline;">B</span> + A</b><br>
+          <font color="red">Commutative Property:</font> A + B = B + A<br>
+          <b>= A + A + <span style="text-decoration: overline;">B</span></b><br>
+          <font color="red">Law of Tautology:</font> A + A = A<br>
+          <b>= A + <span style="text-decoration: overline;">B</span></b><br>&nbsp;</li>
+      <li><b>BC<span style="text-decoration: overline;">B</span></b><br>
+          <font color="red">Commutative Property:</font> AB = BA<br>
+          <b>= B<span style="text-decoration: overline;">B</span>C</b><br>
+          <font color="red">Law of Complements:</font> A &middot; <span style="text-decoration: overline;">A</span> = 0<br>
+          <b>= 0 &middot; C</b><br>
+          <font color="red">Law of Intersection:</font> A &middot; 0 = 0<br>
+          <b>= 0</b><br>&nbsp;</li>
+      <li><b>C + 1 = <span style="text-decoration: overline;">B</span></b><br>
+          <font color="red">Law of Union:</font> A + 1 = 1<br>
+          <b>= 1 + <span style="text-decoration: overline;">B</span></b><br>
+          <font color="red">Law of Union:</font> A + 1 = 1<br>
+          <b>= 1</b><br>&nbsp;</li>
+      <li><b><span style="text-decoration: overline;">X</span> + Y + X</b><br>
+          <font color="red">Commutative Property:</font> A + B = B + A<br>
+          <b>= <span style="text-decoration: overline;">X</span> + X + Y</b><br>
+          <font color="red">Law of Complements:</font> A + <span style="text-decoration: overline;">A</span> = 1<br>
+          <b>= 1 + Y</b><br>
+          <font color="red">Law of Union:</font> A + 1 = 1<br>
+          <b>= 1</b></li>
+    </ul>
+  <p><b>Using DeMorgan's Law</b><br>
+     There are three steps to follow for using DeMorgan's Law while simplifying Boolean expressions.</p>
+    <ol>
+      <li>Change all AND expressions to OR expressions, or vice versa.</li>
+      <li>Complement the individual terms that were ANDed or ORed.</li>
+      <li>Complement the whole expression.</li>
+    </ol>
+  <p>Here is an example applied to <span style="text-decoration: overline;">A + B</span>.</p>
+    <ol>
+      <li>Change OR to AND.<br>
+          &nbsp;<br>
+          &rArr; <span style="text-decoration: overline;">A &middot; B</span><br>
+          &nbsp;</li>
+      <li>Complement each term.<br>
+          &nbsp;<br>
+          &rArr; <font size="+1"><tt class=doubletop><tt class=top>A</tt> &middot; <tt class=top>B</tt></tt></font><br>
+          &nbsp;</li>
+      <li>Complement the entire expression.<br>
+           &nbsp;<br>
+           &rArr; <tt class=tripletop><font size=+1><tt class=doubletop><tt class=top>A</tt> &middot; <tt class=top>B</tt></tt></tt></font></li>
+    </ol>
+  <p>Here is an example of how DeMorgan's Law can be applied to an expression with two different solutions.</p>
+  <table width="100%" border="0">
+    <tbody>
+      <tr>
+        <td>
+          <table cellpadding="3" border="0">
+            <tbody>
+              <tr>
+                <th>Solution I</th>
+                <th>Solution II</th>
+              </tr>
+              <tr>
+                <td><img src=Pictures/demorgso1.PNG></td>
+                <td><img src=Pictures/demorgso1.PNG></td>
+              </tr>
+              <tr>
+                <td>DeMorgan's Law on whole expression</td>
+                <td>Commutative Property</td>
+              </tr>
+              <tr>
+                <td><img src=Pictures/demorgso1a.png></td>
+                <td><img src=Pictures/demorgso2a.PNG></td>
+              </tr>
+              <tr>
+                <td>DeMorgan's Law on each expression</td>
+                <td>Law of Tautology</td>
+              </tr>
+              <tr>
+                <td><img src=Pictures/demorgso1b.PNG></td>
+                <td><img src=Pictures/demorgso2b.PNG></td>
+              </tr>
+              <tr>
+                <td>Associative Property</td>
+                <td>DeMorgan's Law</td>
+              </tr>
+              <tr>
+                <td><img src=Pictures/demorgso1c.PNG></td>
+                <td><img src=Pictures/demorgso2c.PNG></td>
+              </tr>
+              <tr>
+                <td>Commutative Property</td>
+              </tr>
+              <tr>
+                <td><img src=Pictures/demorgso1d.PNG></td>
+              </tr>
+              <tr>
+                <td>Law of Tautology</td>
+              </tr>
+              <tr>
+                <td><img src=Pictures/demorgso2c.PNG></td>
+              </tr>
+            </tbody>
+          </table>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <p><b>Complicated Problems</b><br>
+     Here are some examples of complicated problems.  Using your knowledge from previous examples, try to solve these problems below on your own.</p>
+    <ul>
+      <li><b>(<span style="text-decoration: overline;">A</span> + B)(B + <span style="text-decoration: overline;">C</span>)</b><br>
+          <font color="red">Distributive Property</font><br>
+          = B(<span style="text-decoration: overline;">A</span> + <span style="text-decoration: overline;">C</span>)<br>
+          &nbsp;</li>
+      <li><b>A<span style="text-decoration: overline;">B</span> <span style="text-decoration: overline;">C</span>+ AB<span style="text-decoration: overline;">C</span> + A<span style="text-decoration: overline;">B</span>C + <span style="text-decoration: overline;">A</span>B<span style="text-decoration: overline;">C</span></b><br>
+          <font color="red">Distributive Property</font><br>
+          A<span style="text-decoration: overline;">B</span>(C + <span style="text-decoration: overline;">C</span>) + B<span style="text-decoration: overline;">C</span>(A + <span style="text-decoration: overline;">A</span>)<br>
+          <font color="red">Laws of the Complements</font><br>
+          A<span style="text-decoration: overline;">B</span> + B<span style="text-decoration: overline;">C</span><br>
+          &nbsp;</li>
+      <li><b>(A + B + <span style="text-decoration: overline;">C</span>)(<span style="text-decoration: overline;">A</span> + B + <span style="text-decoration: overline;">C</span>)</b><br>
+          <font color="red">Distributive Property</font><br>
+          (A + <span style="text-decoration: overline;">A</span>)(B + <span style="text-decoration: overline;">C</span>)<br>
+          <font color="red">Law of the Complements</font><br>
+          1(B + <span style="text-decoration: overline;">C</span>)<br>
+          <font color="red">Law of Intersection</font><br>
+          B + <span style="text-decoration: overline;">C</span></li>
+    </ul>
+  <hr>
+  <div align=right>
+  &copy;2012 Melissa Hoang and Jerry Zhang<br>
+  Created on: May 11, 2012<br>
+  Last edited: June 1, 2012
+  </div>
+  </body>
+</html>

@@ -1,0 +1,61 @@
+tt {
+	font-family: 'Andale Mono', 'Lucida Console', monospace;
+}
+tt.tripletop {
+   white-space: nowrap;
+   border-top: solid;
+   border-width: 1px;
+   padding-top: 7px;
+   padding-bottom: 1px;
+   border-color: #000000;
+}
+tt.doubletop {
+   white-space: nowrap;
+   border-top: solid;
+   border-width: 1px;
+   padding-top: 4px;
+   padding-bottom: 1px;
+   border-color: #000000;
+}
+tt.top {
+   white-space: nowrap;
+   border-top: solid;
+   border-width: 1px;
+   padding-top: 1px;
+   padding-bottom: 1px;
+   border-color: #000000;
+}
+tt.regex {
+	white-space: nowrap;
+	border-top: solid;
+	border-bottom: solid;
+	border-width: 1px;
+	padding-top: 1px;
+	padding-bottom: 1px;
+	border-color: #FF6600;
+	background-color: #FFF4E8;
+}
+tt.match {
+	white-space: nowrap;
+	border-top: solid;
+	border-bottom: solid;
+	border-width: 1px;
+	padding-top: 1px;
+	padding-bottom: 1px;
+	border-color: #0066FF;
+	background-color: #E8F4FF;
+}
+tt.string {
+	white-space: nowrap;
+	border-top: solid;
+	border-bottom: solid;
+	border-width: 1px;
+	padding-top: 1px;
+	padding-bottom: 1px;
+	border-color: #00A000;
+	background-color: #E0FFE0;
+}
+tt.code {
+	white-space: nowrap;
+}
+
